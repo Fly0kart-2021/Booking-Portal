@@ -22,7 +22,7 @@ const EditBookings = () => {
   var cardNo = "****-****-****-4579";
   return (
     <>
-      <div className="mt-5 editBookingsWrapper">
+      <div className="editBookingsWrapper">
         <div className="adminInfoWrapper">
           <AdminInfo />
         </div>

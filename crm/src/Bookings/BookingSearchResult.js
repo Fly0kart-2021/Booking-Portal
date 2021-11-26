@@ -28,7 +28,7 @@ const BookingSearchResult = () => {
 
   return (
     <>
-      <div className=" mt-5 bookingSearchResultWrapper">
+      <div className="bookingSearchResultWrapper">
         <div className="adminInfoWrapper">
           <AdminInfo />
         </div>

@@ -36,7 +36,7 @@ const AdminLogin = () => {
       console.log(error);
     }
   };
-  const [showpass,setshowpass]=useState(false);
+
   return (
     <>
       <div className="loginLogoContainer">
@@ -73,9 +73,9 @@ const AdminLogin = () => {
                 }`}
               />
             </div>
-            <div className="d-flex logininputfieldwrapper">
+            <div className="logininputfieldwrapper">
               <input
-                type={showpass? "text":"password"}
+                type="password"
                 autoComplete="none"
                 placeholder="Password*"
                 value={userRegistration.password}
@@ -93,10 +93,6 @@ const AdminLogin = () => {
                   inputborder === "password" ? "inputActive" : null
                 }`}
               />
-              <lable className="btn" onClick={()=>{setshowpass(!showpass)}}>
-              <i className={showpass?"d-block fas fa-eye":"d-none fas fa-eye"}></i>
-              <i className={showpass ?"d-none fas fa-eye-slash":"d-block fas fa-eye-slash"}></i>
-              </lable>
             </div>
             <div className="adminLoginBtn">
               <MyButton
