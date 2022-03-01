@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./CardInfoInput.css";
+import Img from './wallet.png'
 import ExpiryMonthDropdown from "../../Utilities/ExpiryMonthDropdown";
 import ExpiryYearDropdown from "../../Utilities/ExpiryYearDropdown";
 import { default as carte_blanche } from "../../images/carte_blanche_logo.svg";

@@ -103,7 +103,20 @@ const FlightDetails = ({
       {radioState === "twoway" ? (
         <>
           {checkBoxStateD === "" ? (
-            <div>
+            <div
+            className="maincontainer"
+            onClick={() => {
+              setCheckForSelectD("Departure");
+              Selection(id);
+              displaySelectedFlightD(
+                departureTime,
+                destinationTime,
+                flightPrice,
+                id
+              );
+              RedirectToBookingOnTrip1();
+            }}
+            >
               <div className="flightDetailsHeader">
                 <div className="airlineLogo">
                   <img
@@ -212,7 +225,22 @@ const FlightDetails = ({
             </div>
           ) : null}
           {checkBoxStateR === "" ? (
-            <div>
+            <Link
+            to={!checkBoxStateD ? params : "/FlightBookingAndPayment"}
+            
+          >
+            <div
+            onClick={() => {
+              setCheckForSelectR("Return");
+              Selection(idR);
+              displaySelectedFlightR(
+                idR,
+                departureTimeR,
+                destinationTimeR,
+                flightPriceR
+              );
+            }}
+            >
               <div className="flightDetailsHeader">
                 <div className="airlineLogo">
                   <img
@@ -291,10 +319,25 @@ const FlightDetails = ({
               </div>
               <div className="flightDetailsOffer"> </div>
             </div>
-          ) : null}
+         </Link> ) : null}
         </>
       ) : (
-        <div>
+        <Link className="BookingLink" to="/FlightBookingAndPayment">
+        <div
+        onClick={() => {
+          setTotalTrip(
+            departureTime,
+            destinationTime,
+            flightPrice,
+            id,
+            "",
+            "",
+            "",
+            "",
+            flightPrice,
+            USDPrice
+          );
+        }}>
           <div className="flightDetailsHeader">
             <div className="airlineLogo">
               <img
@@ -412,6 +455,7 @@ const FlightDetails = ({
             </div>
           </div>
         </div>
+        </Link>
       )}
     </div>
   );

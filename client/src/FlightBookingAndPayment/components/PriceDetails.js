@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useSelector } from "react-redux";
 import "./PriceDetails.css";
+import Img from './wallet.png'
 
 const PriceDetails = () => {
   const noOfAdults = useSelector((state) => state.Home.adultCount);
@@ -168,6 +169,12 @@ const PriceDetails = () => {
           </div>
         </div>
       </div>
+      <div >
+      <button className="btn paybtn">
+        <div class="pay">Pay {currencySymbol}
+            {totalAmount}<div className="img2"><img className="" src={Img} height="25px" width="25px" alt="{pay}"></img></div> </div>
+        </button>
+        </div>
     </div>
   );
 };

@@ -25,13 +25,13 @@ const Footer = () => {
         <h3 className="p-3">Follow Us</h3>
         <Row className="d-flex m-3">
           <Col xs lg="1">
-            <a href="">  <FaTwitter size={25} /></a>
+            <a href="!#" >  <FaTwitter size={25} /></a>
           </Col>
-          <Col xs lg="1"><a href="#"><FaInstagram size={25} /></a></Col>
-          <Col xs lg="1"><a href="#"><FaFacebookF size={25} /></a></Col>
+          <Col xs lg="1"><a href="!#"><FaInstagram size={25} /></a></Col>
+          <Col xs lg="1"><a href="!#"><FaFacebookF size={25} /></a></Col>
 
           <Col xs lg="1">
-            <a href="#"> <FaWhatsapp size={25} /></a>
+            <a href="!#"> <FaWhatsapp size={25} /></a>
           </Col>
         </Row>
       </div>

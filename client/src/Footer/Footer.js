@@ -5,40 +5,6 @@ const Footer = () => {
 return (
 	<>
     <footer>
-    <div className="content" style={{paddingTop:"30px", paddingBottom:"30px"}}>
-        <div className="left box">
-        <i class="fas fa-map-marker-alt fa-2x f-top-icon" style={{float:"left"}}></i>
-        <div style={{marginLeft:"30px"}}>
-            <h3>Find Us</h3>
-            <a href="https://goo.gl/maps/cvw8UPbr4Vukp4mYA" target={"_blank"}  style={{textDecoration:"none"}} >
-            <p>Flat no - 8, 
-            3rd floor,
-            Hindustan Angan. 
-            Lane no 13/D. 
-            Tingre nagar. 
-            Pune - 411032</p>
-            </a>
-        </div>
-        </div>
-        <div className="middle box">
-        <i class="fas fa-phone fa-2x f-top-icon" style={{float:"left"}}></i>
-        <div style={{float:"left", marginLeft:"10px"}}>
-            <h3>Call Us</h3>
-            <a href="tel:+917057962948" style={{textDecoration:"none"}}>
-                <p>+917057962948</p>
-                </a>
-        </div>
-        </div>
-        <div className="right box">
-        <i class="fas fa-envelope-open fa-2x f-top-icon" style={{float:"left"}}></i>
-        <div style={{float:"left", marginLeft:"10px"}}>
-            <h3>Mail Us</h3>
-            <a href="mailto:Hello@Fly0kart.com" style={{textDecoration:"none"}}>
-            <p>Hello@Fly0kart.com</p>
-            </a>
-        </div>
-        </div>
-    </div>
     <hr />
 
     <div className="content">
